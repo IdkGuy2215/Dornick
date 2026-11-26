@@ -177,7 +177,31 @@ async function loadGPUChart() {
                     color: "#F1EAF3",
                     size: 20
                 }
+            
             },
+
+            annotations: [
+        {
+            text: "Performance relative to GeForce 210",
+            xref: "paper",
+            yref: "paper",
+            x: 0.99,
+            y: 0.99,
+            xanchor: "right",
+            yanchor: "top",
+            showarrow: false,
+            font: {
+                size: 12,
+                color: "#C8BBCF"
+            },
+            bgcolor: "#292033",
+            bordercolor: "#493753",
+            borderwidth: 1,
+            borderpad: 5
+        }
+    ],
+
+
 
             paper_bgcolor: "#292033",
             plot_bgcolor: "#201A29",
