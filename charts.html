@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Charts | Dornick's PC Resources</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Plotly charting library -->
+    <script src="https://cdn.plot.ly/plotly-3.0.1.min.js" defer></script>
+
+    <script src="main.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">DORNICK</a>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="charts.html" class="active">Charts</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-heading">
+            <h1>Performance Charts</h1>
+            <p>
+                Explore hardware performance comparisons across
+                different generations and product families.
+            </p>
+        </section>
+
+        <section class="chart-section">
+            <h2>GPU Performance</h2>
+            <p>
+                Compare graphics card performance across multiple
+                generations from AMD, NVIDIA, Intel, and other manufacturers.
+            </p>
+
+            <div class="chart-container">
+                <div id="gpu-chart"></div>
+                <p id="chart-status" class="chart-status">
+                    Loading GPU data...
+                </p>
+            </div>
+
+            <div class="chart-information">
+                <h3>About this chart</h3>
+                <p>
+                    GPUs are arranged by their performance scores.
+                    Hover over individual points to see the GPU model
+                    and its benchmark score.
+                </p>
+                <p>
+                    Use the chart controls to zoom, pan, and explore
+                    smaller performance differences.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Dornick's PC Resources</p>
+    </footer>
+
+</body>
+</html>
