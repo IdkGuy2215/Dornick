@@ -214,3 +214,21 @@ footer {
     border: 1px solid #493753;
     border-radius: 10px;
 }
+
+
+.resource-section {
+    margin: 55px 0;
+}
+
+.resource-section > p {
+    margin-top: -10px;
+    margin-bottom: 25px;
+}
+
+
+.resource-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-bottom: 12px;
+}

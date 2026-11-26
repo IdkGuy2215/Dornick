@@ -182,7 +182,7 @@ async function loadGPUChart() {
 
             annotations: [
         {
-            text: "Performance relative to GeForce 210",
+            text: "Performance in relation to a GeForce 210",
             xref: "paper",
             yref: "paper",
             x: 0.99,
