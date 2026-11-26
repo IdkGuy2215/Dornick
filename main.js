@@ -116,7 +116,7 @@ async function loadGPUChart() {
         const manufacturerColors = {
             "NVIDIA": "#76B900",
             "AMD": "#ED1C24",
-            "ATI": "#ED1C24",
+            "ATI": "#E87536",
             "Intel": "#0071C5"
         };
 
