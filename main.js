@@ -5,7 +5,6 @@ async function loadGPUChart() {
     const chart = document.getElementById("gpu-chart");
     const status = document.getElementById("chart-status");
 
-    // Only run this code on pages containing the GPU chart.
     if (!chart) return;
 
     try {
@@ -52,6 +51,7 @@ async function loadGPUChart() {
             .filter(gpu =>
                 gpu.name &&
                 gpu.manufacturer &&
+                gpu.generation &&
                 Number.isFinite(gpu.score) &&
                 gpu.score > 0
             );
@@ -60,17 +60,66 @@ async function loadGPUChart() {
             throw new Error("No valid GPU entries were found.");
         }
 
-        // Sort GPUs from lowest to highest performance.
-        gpus.sort((a, b) => a.score - b.score);
+        // Preserve the generation order from the CSV.
+        const generations = [
+            ...new Set(gpus.map(gpu => gpu.generation))
+        ];
+
+        // Assign each generation its own X-axis position.
+        const generationPositions = new Map(
+            generations.map((generation, index) => [
+                generation,
+                index
+            ])
+        );
+
+        // Calculate horizontal offsets for GPUs with scores
+        // within 5 points of another GPU in the same generation.
+        for (const generation of generations) {
+            const group = gpus
+                .filter(gpu => gpu.generation === generation)
+                .sort((a, b) => a.score - b.score);
+
+            const clusters = [];
+            let cluster = [];
+
+            for (const gpu of group) {
+                if (
+                    cluster.length === 0 ||
+                    gpu.score - cluster[cluster.length - 1].score < 5
+                ) {
+                    cluster.push(gpu);
+                } else {
+                    clusters.push(cluster);
+                    cluster = [gpu];
+                }
+            }
+
+            if (cluster.length > 0) {
+                clusters.push(cluster);
+            }
+
+            for (const cluster of clusters) {
+                cluster.forEach((gpu, index) => {
+                    gpu.x = generationPositions.get(generation);
+
+                    if (cluster.length > 1) {
+                        const spacing = 0.08;
+                        gpu.x +=
+                            (index - (cluster.length - 1) / 2) * spacing;
+                    }
+                });
+            }
+        }
 
         // Manufacturer colors.
         const manufacturerColors = {
             "NVIDIA": "#76B900",
             "AMD": "#ED1C24",
+            "ATI": "#ED1C24",
             "Intel": "#0071C5"
         };
 
-        // Fallback colors for other manufacturers.
         const fallbackColors = [
             "#713A91",
             "#E0A458",
@@ -89,7 +138,7 @@ async function loadGPUChart() {
             );
 
             return {
-                x: manufacturerGPUs.map(gpu => gpu.name),
+                x: manufacturerGPUs.map(gpu => gpu.x),
                 y: manufacturerGPUs.map(gpu => gpu.score),
 
                 type: "scatter",
@@ -107,15 +156,16 @@ async function loadGPUChart() {
                 },
 
                 customdata: manufacturerGPUs.map(gpu => [
+                    gpu.name,
                     gpu.generation,
-                    gpu.manufacturer
+                    gpu.score
                 ]),
 
                 hovertemplate:
-                    "<b>%{x}</b><br>" +
-                    "Performance score: %{y:,.0f}<br>" +
-                    "Generation: %{customdata[0]}<br>" +
-                    "Manufacturer: %{customdata[1]}" +
+                    "<b>%{customdata[0]}</b><br>" +
+                    "Performance score: %{customdata[2]:,.0f}<br>" +
+                    "Generation: %{customdata[1]}<br>" +
+                    "Manufacturer: " + manufacturer +
                     "<extra></extra>"
             };
         });
@@ -137,13 +187,14 @@ async function loadGPUChart() {
             },
 
             xaxis: {
-                title: "Graphics Card",
-                type: "category",
-                categoryorder: "array",
-                categoryarray: gpus.map(gpu => gpu.name),
+                title: "GPU Generation",
+                tickmode: "array",
+                tickvals: generations.map((generation, index) => index),
+                ticktext: generations,
                 gridcolor: "#493753",
                 linecolor: "#65516F",
-                automargin: true
+                zeroline: false,
+                range: [-0.5, generations.length - 0.5]
             },
 
             yaxis: {
@@ -175,7 +226,7 @@ async function loadGPUChart() {
                 l: 75,
                 r: 30,
                 t: 70,
-                b: 100
+                b: 120
             },
 
             dragmode: "zoom"
@@ -191,7 +242,7 @@ async function loadGPUChart() {
         await Plotly.newPlot(chart, traces, layout, config);
 
         status.textContent =
-            `Loaded ${gpus.length} GPUs from ${manufacturers.length} manufacturers.`;
+            `Loaded ${gpus.length} GPUs from ${generations.length} generations.`;
 
     } catch (error) {
         console.error("GPU chart error:", error);
@@ -221,7 +272,10 @@ function parseCSV(text) {
         } else if (char === "," && !insideQuotes) {
             row.push(field);
             field = "";
-        } else if ((char === "\n" || char === "\r") && !insideQuotes) {
+        } else if (
+            (char === "\n" || char === "\r") &&
+            !insideQuotes
+        ) {
             if (char === "\r" && next === "\n") {
                 i++;
             }
