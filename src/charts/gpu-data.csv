@@ -1,5 +1,393 @@
 
 name,manufacturer,generation,score
-RX 560,AMD,Polaris,2177
-RX 570,AMD,Polaris,4350
-RX 580,AMD,Polaris,5012
+rtx pro 6000,Nvidia,Blackwell,59215
+rtx 5090,Nvidia,Blackwell,45550
+rtx 5080,Nvidia,Blackwell,27579
+rtx 5070ti,Nvidia,Blackwell,25088
+rtx 5070,Nvidia,Blackwell,18682
+rtx 5060ti 16gb,Nvidia,Blackwell,15886
+rtx 5060,Nvidia,Blackwell,13685
+rtx 5060ti 8gb,Nvidia,Blackwell,15189
+rtx 5050,Nvidia,Blackwell,10815
+rx 9070xt,AMD,RDNA 4,26690
+rx 9070,AMD,RDNA 4,22242
+rx 9070 gre,AMD,RDNA 4,20106
+rx 9060xt 16gb,AMD,RDNA 4,15903
+rx 9060xt 8gb,AMD,RDNA 4,15079
+rx 9050 8gb,AMD,RDNA 4,9970
+9050 4gb,AMD,RDNA 4,7560
+arc b580,Intel,Battlemage,13115
+arc b570,Intel,Battlemage,9960
+rtx 4090,Nvidia,Lovelace,34696
+rtx 4080super,Nvidia,Lovelace,26867
+rtx 4080,Nvidia,Lovelace,26511
+rtx 4070ti super,Nvidia,Lovelace,22420
+rtx 4070ti,Nvidia,Lovelace,20461
+rtx 4070super,Nvidia,Lovelace,19040
+rtx 4070,Nvidia,Lovelace,18326
+rtx 4060ti 16gb,Nvidia,Lovelace,14080
+rtx 4060ti 8gb,Nvidia,Lovelace,13901
+rtx 4060,Nvidia,Lovelace,11119
+rx 7900xtx,AMD,RDNA 3,27757
+rx 7900xt,AMD,RDNA 3,24910
+rx 7900gre,AMD,RDNA 3,20284
+rx 7800xt,AMD,RDNA 3,18860
+rx 7700xt,AMD,RDNA 3,15556
+rx 7600xt,AMD,RDNA 3,11151
+rx 7650gre,AMD,RDNA 3,10730
+rx 7600,AMD,RDNA 3,10480
+rx 7400,AMD,RDNA 3,6220
+arc a770 16gb,Intel,Alchemist,9858
+arc a770 8gb,Intel,Alchemist,9796
+arc a750,Intel,Alchemist,9153
+arc a580,Intel,Alchemist,8178
+arc a380,Intel,Alchemist,3706
+arc a310,Intel,Alchemist,2770
+Xe dg1,Intel,xelp,1230
+rtx 3090ti,Nvidia,Ampere,22419
+rtx 3090,Nvidia,Ampere,20106
+rtx 3080ti,Nvidia,Ampere,19750
+rtx 3080 12gb,Nvidia,Ampere,19038
+rtx 3080 10gb,Nvidia,Ampere,17793
+rtx 3070ti,Nvidia,Ampere,14547
+rtx 3070,Nvidia,Ampere,14082
+rtx 3060ti,Nvidia,Ampere,12327
+rtx 3060 12gb,Nvidia,Ampere,9364
+rtx 3060 8gb,Nvidia,Ampere,8160
+rtx 3050 8gb,Nvidia,Ampere,5865
+rtx 3050 6gb,Nvidia,Ampere,5020
+rtx 3050 4gb,Nvidia,Ampere,4490
+rx 6950xt,AMD,RDNA 2,21351
+rx 6900xt,AMD,RDNA 2,19039
+rx 6800xt,AMD,RDNA 2,18682
+rx 6800,AMD,RDNA 2,15053
+rx 6750xt,AMD,RDNA 2,13352
+rx 6750gre 12gb,AMD,RDNA 2,13215
+rx 6750gre 10gb,AMD,RDNA 2,12114
+rx 6700xt,AMD,RDNA 2,12107
+rx 6700,AMD,RDNA 2,11236
+rx 6650xt,AMD,RDNA 2,10494
+rx 6600xt,AMD,RDNA 2,9502
+rx 6600,AMD,RDNA 2,8420
+rx 6500xt,AMD,RDNA 2,5093
+rx 6400,AMD,RDNA 2,3756
+6300,AMD,RDNA 2,3544
+titan rtx,Nvidia,Turing,15004
+rtx 2080ti,Nvidia,Turing,13963
+rtx 2080super,Nvidia,Turing,11250
+rtx 2080,Nvidia,Turing,10730
+rtx 2070super,Nvidia,Turing,9975
+rtx 2070,Nvidia,Turing,8816
+rtx 2060super,Nvidia,Turing,8168
+rtx 2060 12gb,Nvidia,Turing,7570
+rtx 2060,Nvidia,Turing,7568
+gtx 1660ti,Nvidia,Turing,6224
+gtx 1660super,Nvidia,Turing,6231
+gtx 1660,Nvidia,Turing,5731
+gtx 1650super,Nvidia,Turing,5160
+gtx 1650,Nvidia,Turing,3832
+gtx 1630,Nvidia,Turing,2501
+rx 5700xt,AMD,RDNA 1,8946
+rx 5700,AMD,RDNA 1,7532
+rx 5600xt,AMD,RDNA 1,7184
+rx 5600,AMD,RDNA 1,6230
+rx 5500xt,AMD,RDNA 1,5050
+rx 5500,AMD,RDNA 1,5010
+rx 5300xt,AMD,RDNA 1,4345
+rx 5300,AMD,RDNA 1,4488
+Radeon VII,AMD,Vega 2,14997
+rx Vega FE,AMD,Vega,11195
+rx Vega 64le,AMD,Vega,10233
+rx Vega 64,AMD,Vega,9976
+rx Vega 56,AMD,Vega,9877
+Titan V,Nvidia,Volta,13358
+Titan VCE,Nvidia,Volta,13950
+Titan XP,Nvidia,Pascal,10720
+Titan X,Nvidia,Pascal,9975
+gtx 1080ti,Nvidia,Pascal,9869
+gtx 1080,Nvidia,Pascal,7390
+gtx 1070ti,Nvidia,Pascal,7251
+gtx 1070,Nvidia,Pascal,6579
+gtx 1060 6gb,Nvidia,Pascal,4884
+gtx 1060 5gb,Nvidia,Pascal,4600
+gtx 1060 3gb,Nvidia,Pascal,3892
+gtx 1050ti,Nvidia,Pascal,3061
+gtx 1050 3gb,Nvidia,Pascal,2730
+gtx 1050 2gb,Nvidia,Pascal,2450
+gt 1030,Nvidia,Pascal,1237
+gt 1010,Nvidia,Pascal,810
+rx 640 128bit,AMD,Polaris 2,4334
+rx 640 64bit,AMD,Polaris 2,1920
+625,AMD,Polaris 2,970
+rx 590,AMD,Polaris,5412
+rx 580x,AMD,Polaris,5262
+rx 580,AMD,Polaris,5012
+rx 570x,AMD,Polaris,4567
+rx 570,AMD,Polaris,4350
+rx 560xt,AMD,Polaris,4043
+rx 560x,AMD,Polaris,2285
+rx 560,AMD,Polaris,2177
+rx 550x,AMD,Polaris,1636
+rx 550,AMD,Polaris,1559
+550x,AMD,Polaris,1317
+550,AMD,Polaris,1255
+540,AMD,Polaris,860
+520,AMD,Polaris,699
+rx 480,AMD,Arctic Islands,4716
+rx 470,AMD,Arctic Islands,4072
+rx 460,AMD,Arctic Islands,2130
+rx 455,AMD,Arctic Islands,1493
+r7 450,AMD,Arctic Islands,1090
+r7 435,AMD,Arctic Islands,628
+r5 430,AMD,Arctic Islands,579
+gtx Titan X,Nvidia,Maxwell 2,6229
+gtx 980ti,Nvidia,Maxwell 2,5895
+gtx 980,Nvidia,Maxwell 2,4848
+gtx 970,Nvidia,Maxwell 2,4488
+gtx 960,Nvidia,Maxwell 2,2842
+gtx 950,Nvidia,Maxwell 2,2312
+r9 Fury X,AMD,Pirate Islands,6344
+r9 Fury,AMD,Pirate Islands,5953
+r9 Nano,AMD,Pirate Islands,5840
+r9 390X2,AMD,Pirate Islands,5423
+r9 390x,AMD,Pirate Islands,4815
+r9 390,AMD,Pirate Islands,4404
+r9 380x,AMD,Pirate Islands,3291
+r9 380,AMD,Pirate Islands,2965
+r9 370x,AMD,Pirate Islands,3201
+r9 370,AMD,Pirate Islands,2389
+r9 360,AMD,Pirate Islands,1490
+r7 370,AMD,Pirate Islands,2128
+r7 360,AMD,Pirate Islands,1464
+r7 350x,AMD,Pirate Islands,985
+r7 350,AMD,Pirate Islands,803
+r7 340x,AMD,Pirate Islands,785
+r7 340,AMD,Pirate Islands,698
+r5 350,AMD,Pirate Islands,700
+r5 340x,AMD,Pirate Islands,698
+r5 340,AMD,Pirate Islands,586
+r5 330,AMD,Pirate Islands,480
+r5 310 2gb,AMD,Pirate Islands,310
+r5 310 1gb,AMD,Pirate Islands,232
+gtx Titan Z,Nvidia,Kepler 2 / Maxwell 1,7180
+gtx Titan B,Nvidia,Kepler 2 / Maxwell 1,4615
+gtx Titan,Nvidia,Kepler 2 / Maxwell 1,4488
+gtx 780ti,Nvidia,Kepler 2 / Maxwell 1,4607
+gtx 780,Nvidia,Kepler 2 / Maxwell 1,3700
+gtx 770,Nvidia,Kepler 2 / Maxwell 1,2954
+gtx 760ti,Nvidia,Kepler 2 / Maxwell 1,2880
+gtx 760 x2,Nvidia,Kepler 2 / Maxwell 1,4345
+gtx 760,Nvidia,Kepler 2 / Maxwell 1,2433
+gtx 750ti,Nvidia,Kepler 2 / Maxwell 1,1820
+gtx 750,Nvidia,Kepler 2 / Maxwell 1,1650
+gtx 745,Nvidia,Kepler 2 / Maxwell 1,1025
+gtx 740,Nvidia,Kepler 2 / Maxwell 1,1020
+gt 740,Nvidia,Kepler 2 / Maxwell 1,1005
+gt 730,Nvidia,Kepler 2 / Maxwell 1,769
+gt 720,Nvidia,Kepler 2 / Maxwell 1,405
+gt 710,Nvidia,Kepler 2 / Maxwell 1,251
+gt 705,Nvidia,Kepler 2 / Maxwell 1,229
+r9 295x2,AMD,Volcanic Islands,6230
+r9 290x2,AMD,Volcanic Islands,5950
+r9 290x,AMD,Volcanic Islands,4475
+r9 290,AMD,Volcanic Islands,4128
+r9 285,AMD,Volcanic Islands,2932
+r9 280x2,AMD,Volcanic Islands,4695
+r9 280x,AMD,Volcanic Islands,3291
+r9 280,AMD,Volcanic Islands,2853
+r9 270x,AMD,Volcanic Islands,2389
+r9 270,AMD,Volcanic Islands,2170
+r9 260,AMD,Volcanic Islands,1770
+r9 255,AMD,Volcanic Islands,1150
+r7 265x,AMD,Volcanic Islands,2310
+r7 265,AMD,Volcanic Islands,2115
+r7 260x,AMD,Volcanic Islands,1460
+r7 260,AMD,Volcanic Islands,1440
+r7 250x,AMD,Volcanic Islands,1240
+r7 250,AMD,Volcanic Islands,985
+r7 240x,AMD,Volcanic Islands,740
+r7 240,AMD,Volcanic Islands,619
+r5 240,AMD,Volcanic Islands,515
+r5 235x,AMD,Volcanic Islands,336
+r5 235,AMD,Volcanic Islands,310
+r5 230,AMD,Volcanic Islands,260
+r5 220,AMD,Volcanic Islands,199
+gtx 690,Nvidia, Kepler,4600
+gtx 680,Nvidia, Kepler,2992
+gtx 670,Nvidia, Kepler,2770
+gtx 660ti,Nvidia, Kepler,2420
+gtx 660 2gb,Nvidia, Kepler,2136
+gtx 660 1.5gb,Nvidia, Kepler,2055
+gtx 650ti 2gb,Nvidia, Kepler,1769
+gtx 650ti 1gb,Nvidia, Kepler,1493
+gtx 650,Nvidia, Kepler,1036
+gtx 645,Nvidia, Kepler,1312
+gtx 640 2gb,Nvidia, Kepler,628
+gtx 640 1.5gb,Nvidia, Kepler,590
+gt 640,Nvidia, Kepler,477
+gt 635 1.5gb,Nvidia, Kepler,588
+gt 635 1gb,Nvidia, Kepler,554
+gt 630 2gb,Nvidia, Kepler,480
+gt 630 1gb,Nvidia, Kepler,412
+gt 625,Nvidia, Kepler,269
+gt 620 1gb,Nvidia, Kepler,405
+gt 620 512mb,Nvidia,Kepler,252
+gt 615,Nvidia, Kepler,310
+gt 610 2gb,Nvidia,Kepler,237
+gt 610 1gb,Nvidia,Kepler,250
+gt 610 512mb,Nvidia,Kepler,204
+605,Nvidia,Kepler,160
+hd 8990,AMD,Sea Islands,4928
+hd 8970,AMD,Sea Islands,3508
+hd 8950,AMD,Sea Islands,2577
+hd 8870,AMD,Sea Islands,2449
+hd 8860,AMD,Sea Islands,2334
+hd 8770,AMD,Sea Islands,1314
+hd 8760,AMD,Sea Islands,1280
+hd 8740,AMD,Sea Islands,1200
+hd 8730,AMD,Sea Islands,1024
+hd 8670,AMD,Sea Islands,1000
+hd 8570 2gb,AMD,Sea Islands,670
+hd 8570 1gb,AMD,Sea Islands,500
+hd 8550,AMD,Sea Islands,
+hd 8510,AMD,Sea Islands,
+hd 8490,AMD,Sea Islands,
+hd 8470,AMD,Sea Islands,
+hd 8450,AMD,Sea Islands,
+hd 8350,AMD,Sea Islands,
+hd 7990,AMD,Southern Islands,4694
+hd 7970x2,AMD,Southern Islands,
+hd 7970ge,AMD,Southern Islands,3341
+hd 7970,AMD,Southern Islands,2961
+hd 7950,AMD,Southern Islands,2455
+hd 7870xt,AMD,Southern Islands,
+hd 7870,AMD,Southern Islands,2333
+hd 7850,AMD,Southern Islands,1929
+hd 7790,AMD,Southern Islands,
+hd 7770,AMD,Southern Islands,1252
+hd 7750,AMD,Southern Islands,977
+hd 7730,AMD,Southern Islands,
+hd 7720,AMD,Southern Islands,
+hd 7670,AMD,Southern Islands,
+hd 7570,AMD,Southern Islands,
+hd 7510,AMD,Southern Islands,
+hd 7470,AMD,Southern Islands,
+hd 7510,AMD,Southern Islands,
+hd 7470,AMD,Southern Islands,
+hd 7450,AMD,Southern Islands,
+hd 7350,AMD,Southern Islands,
+gtx 590,Nvidia,Fermi 2,3338
+gtx 580,Nvidia,Fermi 2,2430
+gtx 570,Nvidia,Fermi 2,2142
+gtx 560ti,Nvidia,Fermi 2,1778
+gtx 560,Nvidia,Fermi 2,1440
+gtx 555,Nvidia,Fermi 2,1345
+gtx 550ti,Nvidia,Fermi 2,1027
+gt 545 1.5gb,Nvidia,Fermi 2,468
+gt 545 1gb,Nvidia,Fermi 2,827
+gt 530,Nvidia,Fermi 2,470
+gt 520,Nvidia,Fermi 2,251
+510,Nvidia,Fermi 2,202
+505 1gb,Nvidia,Fermi 2,158
+505 512mb,Nvidia,Fermi 2,124
+hd 6990,AMD,Northern Islands,3214
+hd 6970,AMD,Northern Islands,2054
+hd 6950,AMD,Northern Islands,1828
+hd 6930,AMD,Northern Islands,
+hd 6870x2,AMD,Northern Islands,
+hd 6870,AMD,Northern Islands,1616
+hd 6850x2,AMD,Northern Islands,
+hd 6850,AMD,Northern Islands,1341
+hd 6790,AMD,Northern Islands,1153
+hd 6770,AMD,Northern Islands,
+hd 6750,AMD,Northern Islands,
+hd 6670,AMD,Northern Islands,676
+hd 6610,AMD,Northern Islands,
+hd 6570 2gb,AMD,Northern Islands,
+hd 6570 1gb,AMD,Northern Islands,
+hd 6530,AMD,Northern Islands,
+hd 6510,AMD,Northern Islands,
+hd 6490,AMD,Northern Islands,
+hd 6450,AMD,Northern Islands,237
+hd 6390,AMD,Northern Islands,
+hd 6350,AMD,Northern Islands,
+hd 6290,AMD,Northern Islands,
+hd 6250,AMD,Northern Islands,
+hd 6230,AMD,Northern Islands,
+gtx 480,Nvidia,Fermi,1963
+gtx 470,Nvidia,Fermi,1559
+gtx 465,Nvidia,Fermi,
+gtx 460,Nvidia,Fermi,1216
+gtx 450,Nvidia,Fermi,
+gts 450,Nvidia,Fermi,827
+gts 440,Nvidia,Fermi,
+gt 440,Nvidia,Fermi,470
+gt 430,Nvidia,Fermi,405
+gt 420,Nvidia,Fermi,
+gt 415,Nvidia,Fermi,
+405,Nvidia,Fermi,
+hd 5970,ATI,Evergreen,2503
+hd 5950,ATI,Evergreen,
+hd 5870 2gb,ATI,Evergreen,
+hd 5870 1gb,ATI,Evergreen,1724
+hd 5850,ATI,Evergreen,1466
+hd 5830,ATI,Evergreen,1096
+hd 5770x2,ATI,Evergreen,
+hd 5770,ATI,Evergreen,985
+hd 5750,ATI,Evergreen,856
+hd 5730,ATI,Evergreen,
+hd 5690,ATI,Evergreen,
+hd 5670 1gb,ATI,Evergreen,586
+hd 5670 512mb,ATI,Evergreen,
+hd 5630,ATI,Evergreen,
+hd 5570,ATI,Evergreen,411
+hd 5550,ATI,Evergreen,
+hd 5530,ATI,Evergreen,
+hd 5490,ATI,Evergreen,
+hd 5470,ATI,Evergreen,
+hd 5450,ATI,Evergreen,202
+hd 5450 Px1,ATI,Evergreen,
+gtx 295,Nvidia,Tesla 2,1893
+gtx 285x2,Nvidia,Tesla 2,2500
+gtx 285,Nvidia,Tesla 2,1367
+gtx 280,Nvidia,Tesla 2,1255
+gtx 275,Nvidia,Tesla 2,1248
+gtx 260 1.7gb,Nvidia,Tesla 2,909
+gtx 260 896mb,Nvidia,Tesla 2,1002
+gtx 250,Nvidia,Tesla 2,833
+gts 250,Nvidia,Tesla 2,803
+gts 240,Nvidia,Tesla 2,769
+gt 240,Nvidia,Tesla 2,480
+gt 230 1.5gb,Nvidia,Tesla 2,454
+gt 230 512mb,Nvidia,Tesla 2,434
+gt 220 1gb,Nvidia,Tesla 2,310
+gt 220 512mb,Nvidia,Tesla 2,232
+g 210 1gb,Nvidia,Tesla 2,
+g 210 512mb,Nvidia,Tesla 2,149
+g 210 128mb,Nvidia,Tesla 2,107
+210,Nvidia,Tesla 2,100
+hd 4890,ATI,R700,1172
+hd 4870x2,ATI,R700,1787
+hd 4870,ATI,R700,1015
+hd 4860,ATI,R700,
+hs 4855,ATI,R700,
+hd 4850x2,ATI,R700,
+hd 4850,ATI,R700,785
+hd 4830,ATI,R700,698
+hd 4810,ATI,R700,
+hd 4770,ATI,R700,744
+hd 4730,ATI,R700,
+hd 4720,ATI,R700,
+hd 4710,ATI,R700,
+hd 4700,ATI,R700,
+hd 4670x2,ATI,R700,
+hd 4670,ATI,R700,447
+hd 4650,ATI,R700,
+hd 4580,ATI,R700,
+hd 4570,ATI,R700,
+hd 4550,ATI,R700,158
+hd 4520,ATI,R700,
+hd 4450,ATI,R700,202
+hd 4350,ATI,R700,
+hd 4350 Px1,ATI,R700,
+
