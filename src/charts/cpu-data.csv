@@ -1,4 +1,313 @@
 
 name,manufacturer,generation,score
-Ryzen 3 1200,AMD,Zen 1,1000
-
+Core I3 6100,Intel,Skylake,66
+Core I3 6300,Intel,Skylake,70
+Core I3 6320,Intel,Skylake,71
+Core I5 6400,Intel,Skylake,83
+Core I5 6500,Intel,Skylake,90
+Core I5 6600,Intel,Skylake,97
+Core I5 6600K,Intel,Skylake,100
+Core I7 6700,Intel,Skylake,128
+Core I7 6700K,Intel,Skylake,142
+Core I7 6800K,Intel,Skylake,170
+Core I7 6850K,Intel,Skylake,181
+Core I7 6900K,Intel,Skylake,233
+Core I7 6950X,Intel,Skylake,279
+Ryzen 3 1200,AMD,Zen,100
+Ryzen 3 1300X,AMD,Zen,110
+Ryzen 5 1400,AMD,Zen,123
+Ryzen 5 1500X,AMD,Zen,144
+Ryzen 5 1600,AMD,Zen,195
+Ryzen 7 1600X,AMD,Zen,207
+Ryzen 7 1700,AMD,Zen,234
+Ryzen 7 1700X,AMD,Zen,248
+Ryzen 7 1800X,AMD,Zen,259
+Ryzen Threadripper 1900X,AMD,Zen,268
+Ryzen Threadripper 1920,AMD,Zen,351
+Ryzen Threadripper 1920X,AMD,Zen,366
+Ryzen Threadripper 1950X,AMD,Zen,443
+Core I3 7100,Intel,Skylake2,69
+Core I3 7300,Intel,Skylake2,73
+Core I3 7320,Intel,Skylake2,77
+Core I3 7350K,Intel,Skylake2,76
+Core I5 7400,Intel,Skylake2,88
+Core I5 7500,Intel,Skylake2,97
+Core I5 7600,Intel,Skylake2,105
+Core I5 7600K,Intel,Skylake2,108
+Core I5 7640X,Intel,Skylake2,114
+Core I7 7700,Intel,Skylake2,137
+Core I7 7700K,Intel,Skylake2,153
+Core I7 7740X,Intel,Skylake2,154
+Core I7 7800X,Intel,Skylake2,207
+Core I7 7820X,Intel,Skylake2,273
+Core I9 7900X,Intel,Skylake2,331
+Core I9 7920X,Intel,Skylake2,375
+Core I9 7940X,Intel,Skylake2,400
+Core I9 7960X,Intel,Skylake2,438
+Core I9 7980XE,Intel,Skylake2,470
+Ryzen 3 2300X,AMD,Zen+,120
+Ryzen 5 2500X,AMD,Zen+,149
+Ryzen 5 2600,AMD,Zen+,209
+Ryzen 5 2600X,AMD,Zen+,220
+Ryzen 7 2700,AMD,Zen+,248
+Ryzen 7 2700X,AMD,Zen+,277
+Ryzen Threadripper 2920X,AMD,Zen+,401
+Ryzen Threadripper 2950X,AMD,Zen+,466
+Ryzen Threadripper 2970WX,AMD,Zen+,493
+Ryzen Threadripper 2990WX,AMD,Zen+,507
+Core I3 8100F,Intel,Coffeelake,
+Core I3 8100,Intel,Coffeelake,97
+Core I3 8300,Intel,Coffeelake,101
+Core I3 8350K,Intel,Coffeelake,110
+Core I5 8400,Intel,Coffeelake,147
+Core I5 8500,Intel,Coffeelake,151
+Core I5 8600,Intel,Coffeelake,159
+Core I5 8600K,Intel,Coffeelake,161
+Core i7 8086K,Intel,Coffeelake,224
+Core I7 8700,Intel,Coffeelake,203
+Core I7 8700K,Intel,Coffeelake,216
+Ryzen 3 3100,AMD,Zen2,183
+Ryzen 3 3300X,AMD,Zen2,200
+Ryzen 5 3500,AMD,Zen2,203
+Ryzen 5 3500X,AMD,Zen2,209
+Ryzen 5 3600,AMD,Zen2,281
+Ryzen 5 3600X,AMD,Zen2,288
+Ryzen 5 3600XT,AMD,Zen2,295
+Ryzen 7 3700X,AMD,Zen2,356
+Ryzen 7 3800X,AMD,Zen2,365
+Ryzen 7 3800XT,AMD,Zen2,372
+Ryzen 9 3900,AMD,Zen2,486
+Ryzen 9 3900X,AMD,Zen2,517
+Ryzen 9 3900XT,AMD,Zen2,518
+Ryzen 9 3950X,AMD,Zen2,612
+Ryzen Threadripper 3960X,AMD,Zen2,873
+Ryzen Threadripper 3970X,AMD,Zen2,1002
+Ryzen Threadripper 3990X,AMD,Zen2,1266
+Ryzen Threadripper PRO 3945WX,AMD,Zen2,531
+Ryzen Threadripper PRO 3955WX,AMD,Zen2,634
+Ryzen Threadripper PRO 3975WX,AMD,Zen2,996
+Ryzen Threadripper PRO 3995WX,AMD,Zen2,1310
+Core I3 9100F,Intel,Coffeelake2,106
+Core I3 9100,Intel,Coffeelake2,105
+Core I3 9300,Intel,Coffeelake2,112
+Core I3 9320,Intel,Coffeelake2,116
+Core I3 9350KF,Intel,Coffeelake2,119
+Core I3 9350K,Intel,Coffeelake2,121
+Core I5 9400F,Intel,Coffeelake2,150
+Core I5 9400,Intel,Coffeelake2,149
+Core I5 9500F,Intel,Coffeelake2,159
+Core I5 9500,Intel,Coffeelake2,156
+Core I5 9600,Intel,Coffeelake2,164
+Core I5 9600KF,Intel,Coffeelake2,169
+Core I5 9600K,Intel,Coffeelake2,169
+Core I7 9700F,Intel,Coffeelake2,209
+Core I7 9700,Intel,Coffeelake2,209
+Core I7 9700KF,Intel,Coffeelake2,227
+Core I7 9700K,Intel,Coffeelake2,229
+Core I7 9800X,Intel,Coffeelake2,288
+Core I9 9820X,Intel,Coffeelake2,327
+Core I9 9900,Intel,Coffeelake2,260
+Core I9 9900KF,Intel,Coffeelake2,286
+Core I9 9900K,Intel,Coffeelake2,287
+Core I9 9900KS,Intel,Coffeelake2,308
+Core I9 9900X,Intel,Coffeelake2,343
+Core I9 9920X,Intel,Coffeelake2,397
+Core I9 9940X,Intel,Coffeelake2,447
+Core I9 9960X,Intel,Coffeelake2,469
+Core I9 9980XE,Intel,Coffeelake2,501
+Core I9 9990XE,Intel,Coffeelake2,481
+Ryzen 3 4100,AMD,Zen2+,175
+Ryzen 5 4500,AMD,Zen2+,253
+Ryzen 7 4700S,AMD,Zen2+,326
+Core I3 10100F,Intel,Cometlake,138
+Core I3 10100,Intel,Cometlake,135
+Core I3 10105F,Intel,Cometlake,141
+Core I3 10105,Intel,Cometlake,132
+Core I3 10300,Intel,Cometlake,148
+Core I3 10305,Intel,Cometlake,146
+Core I3 10320,Intel,Cometlake,159
+Core I3 10325,Intel,Cometlake,161
+Core I5 10400F,Intel,Cometlake,192
+Core I5 10400,Intel,Cometlake,190
+Core I5 10500,Intel,Cometlake,205
+Core i5 10505,Intel,Cometlake,193
+Core I5 10600,Intel,Cometlake,215
+Core I5 10600KF,Intel,Cometlake,224
+Core I5 10600K,Intel,Cometlake,227
+Core I7 10700F,Intel,Cometlake,256
+Core I7 10700,Intel,Cometlake,254
+Core I7 10700KF,Intel,Cometlake,291
+Core I7 10700K,Intel,Cometlake,294
+Core I9 10850K,Intel,Cometlake,348
+Core I9 10900F,Intel,Cometlake,313
+Core I9 10900,Intel,Cometlake,303
+Core I9 10900KF,Intel,Cometlake,352
+Core I9 10900K,Intel,Cometlake,354
+Core I9 10900X,Intel,Cometlake,354
+Core I9 10910,Intel,Cometlake,340
+Core I9 10920X,Intel,Cometlake,409
+Core I9 10940X,Intel,Cometlake,439
+Core I9 10980XE,Intel,Cometlake,507
+Ryzen 3 5100,AMD,Zen3,
+Ryzen 5 5500,AMD,Zen3,306
+Ryzen 5 5500F,AMD,Zen3,325
+Ryzen 5 5500X3d,AMD,Zen3,323
+Ryzen 5 5600,AMD,Zen3,342
+Ryzen 5 5600F,AMD,Zen3,306
+Ryzen 5 5600X,AMD,Zen3,348
+Ryzen 5 5600XT,AMD,Zen3,355
+Ryzen 5 5600X3d,AMD,Zen3,350
+Ryzen 7 5700,AMD,Zen3,385
+Ryzen 7 5700X,AMD,Zen3,423
+Ryzen 7 5700X3d,AMD,Zen3,419
+Ryzen 7 5800,AMD,Zen3,408
+Ryzen 7 5800X,AMD,Zen3,440
+Ryzen 7 5800XT,AMD,Zen3,446
+Ryzen 7 5800X3d,AMD,Zen3,451
+Ryzen 9 5900,AMD,Zen3,541
+Ryzen 9 5900X,AMD,Zen3,620
+Ryzen 9 5900XT,AMD,Zen3,699
+Ryzen 9 5950X,AMD,Zen3,721
+Ryzen Threadripper 5945WX,AMD,Zen3,640
+Ryzen Threadripper 5955WX,AMD,Zen3,779
+Ryzen Threadripper 5965WX,AMD,Zen3,1051
+Ryzen Threadripper 5975WX,AMD,Zen3,1196
+Ryzen Threadripper 5995WX,AMD,Zen3,1515
+Core I5 11400F,Intel,Rocketlake,268
+Core I5 11400,Intel,Rocketlake,264
+Core I5 11500,Intel,Rocketlake,271
+Core I5 11600,Intel,Rocketlake,286
+Core I5 11600KF,Intel,Rocketlake,308
+Core I5 11600K,Intel,Rocketlake,310
+Core I7 11700F,Intel,Rocketlake,330
+Core I7 11700,Intel,Rocketlake,327
+Core I7 11700KF,Intel,Rocketlake,378
+Core I7 11700K,Intel,Rocketlake,387
+Core I9 11900F,Intel,Rocketlake,350
+Core I9 11900,Intel,Rocketlake,356
+Core I9 11900KF,Intel,Rocketlake,390
+Core I9 11900K,Intel,Rocketlake,396
+Core I3 12100F,Intel,Alderlake,222
+Core I3 12100,Intel,Alderlake,200
+Core I3 12300,Intel,Alderlake,229
+Core I5 12400F,Intel,Alderlake,311
+Core I5 12400,Intel,Alderlake,300
+Core I5 12490F,Intel,Alderlake,323
+Core I5 12500,Intel,Alderlake,313
+Core I5 12600,Intel,Alderlake,339
+Core I5 12600KF,Intel,Alderlake,438
+Core I5 12600K,Intel,Alderlake,438
+Core I7 12700F,Intel,Alderlake,480
+Core I7 12700,Intel,Alderlake,474
+Core I7 12700KF,Intel,Alderlake,540
+Core I7 12700K,Intel,Alderlake,545
+Core I9 12900F,Intel,Alderlake,569
+Core I9 12900,Intel,Alderlake,535
+Core I9 12900KF,Intel,Alderlake,644
+Core I9 12900K,Intel,Alderlake,655
+Core I9 12900KS,Intel,Alderlake,691
+Ryzen 5 7400,AMD,Zen4,354
+Ryzen 5 7400F,AMD,Zen4,408
+Ryzen 5 7500,AMD,Zen4,428
+Ryzen 5 7500F,AMD,Zen4,422
+Ryzen 5 7500X3d,AMD,Zen4,399
+Ryzen 5 7600,AMD,Zen4,429
+Ryzen 5 7600X,AMD,Zen4,450
+Ryzen 5 7600X3d,AMD,Zen4,412
+Ryzen 7 7700,AMD,Zen4,547
+Ryzen 7 7700X,AMD,Zen4,565
+Ryzen 7 7700X3d,AMD,Zen4,522
+Ryzen 7 7800X3d,AMD,Zen4,546
+Ryzen 9 7900,AMD,Zen4,765
+Ryzen 9 7900X,AMD,Zen4,816
+Ryzen 9 7900X3d,AMD,Zen4,800
+Ryzen 9 7950X,AMD,Zen4,990
+Ryzen 9 7950X3d,AMD,Zen4,993
+Ryzen Threadripper 7960X,AMD,Zen4,1330
+Ryzen Threadripper 7970X,AMD,Zen4,1582
+Ryzen Threadripper 7980X,AMD,Zen4,2163
+Ryzen Threadripper PRO 7945WX,AMD,Zen4,792
+Ryzen Threadripper PRO 7955WX,AMD,Zen4,956
+Ryzen Threadripper PRO 7965WX,AMD,Zen4,1311
+Ryzen Threadripper PRO 7975WX,AMD,Zen4,1524
+Ryzen Threadripper PRO 7985WX,AMD,Zen4,2102
+Ryzen Threadripper PRO 7995WX,AMD,Zen4,2250
+Core I3 13100F,Intel,Raptorlake,233
+Core I3 13100,Intel,Raptorlake,225
+Core I5 13400F,Intel,Raptorlake,396
+Core I5 13400,Intel,Raptorlake,381
+Core I5 13490F,Intel,Raptorlake,427
+Core I5 13500,Intel,Raptorlake,488
+Core I5 13600,Intel,Raptorlake,493
+Core I5 13600KF,Intel,Raptorlake,594
+Core I5 13600K,Intel,Raptorlake,596
+Core I7 13700F,Intel,Raptorlake,601
+Core I7 13700,Intel,Raptorlake,570
+Core I7 13700KF,Intel,Raptorlake,725
+Core I7 13700K,Intel,Raptorlake,726
+Core I7 13790F,Intel,Raptorlake,658
+Core I9 13900F,Intel,Raptorlake,766
+Core I9 13900,Intel,Raptorlake,709
+Core I9 13900KF,Intel,Raptorlake,915
+Core I9 13900K,Intel,Raptorlake,925
+Core I9 13900KS,Intel,Raptorlake,962
+Ryzen 5 8400F,AMD,Zen4+,388
+Ryzen 7 8700F,AMD,Zen4+,491
+Core I3 14100F,Intel,Raptorlake2,245
+Core I3 14100,Intel,Raptorlake2,240
+Core I5 14400F,Intel,Raptorlake2,404
+Core I5 14400,Intel,Raptorlake2,397
+Core I5 14490F,Intel,Raptorlake2,422
+Core I5 14500,Intel,Raptorlake2,485
+Core I5 14600,Intel,Raptorlake2,569
+Core I5 14600KF,Intel,Raptorlake2,609
+Core I5 14600K,Intel,Raptorlake2,611
+Core I7 14700F,Intel,Raptorlake2,657
+Core I7 14700,Intel,Raptorlake2,640
+Core I7 14700KF,Intel,Raptorlake2,828
+Core I7 14700K,Intel,Raptorlake2,827
+Core I7 14790F,Intel,Raptorlake2,647
+Core I9 14900F,Intel,Raptorlake2,740
+Core I9 !4900,Intel,Raptorlake2,707
+Core I9 14900KF,Intel,Raptorlake2,925
+Core I9 14900K,Intel,Raptorlake2,927
+Core I9 14900KS,Intel,Raptorlake2,953
+Ryzen 5 9500F,AMD,Zen5,449
+Ryzen 5 9600,AMD,Zen5,466
+Ryzen 5 9600X,AMD,Zen5,478
+Ryzen 7 9700F,AMD,Zen5,566
+Ryzen 7 9700X,AMD,Zen5,588
+Ryzen 7 9800X3d,AMD,Zen5,636
+Ryzen 7 9850X3d,AMD,Zen5,659
+Ryzen 9 9900X,AMD,Zen5,865
+Ryzen 9 9900X3d,AMD,Zen5,893
+Ryzen 9 9950X,AMD,Zen5,1047
+Ryzen 9 9950X3d,AMD,Zen5,1118
+Ryzen 9 9950X3d2,AMD,Zen5,1150
+Ryzen Threadripper 9960X,AMD,Zen5,1473
+Ryzen Threadripper 9970X,AMD,Zen5,1711
+Ryzen Threadripper 9980X,AMD,Zen5,2290
+Ryzen Threadripper PRO 9945WX,AMD,Zen5,891
+Ryzen Threadripper PRO 9955WX,AMD,Zen5,1060
+Ryzen Threadripper PRO 9965WX,AMD,Zen5,1469
+Ryzen Threadripper PRO 9975WX,AMD,Zen5,1682
+Ryzen Threadripper PRO 9985WX,AMD,Zen5,2394
+Ryzen Threadripper PRO 9995WX,AMD,Zen5,2728
+Core Ultra 5 225F,Intel,Arrowlake,493
+Core Ultra 5 225,Intel,Arrowlake,384
+Core Ultra 5 235,Intel,Arrowlake,582
+Core Ultra 5 245,Intel,Arrowlake,634
+Core Ultra 5 245KF,Intel,Arrowlake,685
+Core Ultra 5 245K,Intel,Arrowlake,685
+Core Ultra 5 250KF Plus,Intel,Arrowlake,812
+Core Ultra 5 250K Plus,Intel,Arrowlake,822
+Core Ultra 7 260K,Intel,Arrowlake,
+Core Ultra 7 265F,Intel,Arrowlake,790
+Core Ultra 7 265,Intel,Arrowlake,770
+Core Ultra 7 265KF,Intel,Arrowlake,931
+Core Ultra 7 265K,Intel,Arrowlake,934
+Core Ultra 7 270K Plus,Intel,Arrowlake,1092
+Core Ultra 9 285,Intel,Arrowlake,923
+Core Ultra 9 285K,Intel,Arrowlake,1072
+RTX Spark N1X (20 core),Nvidia,n1,663
+RTX Spark N1X (18 core),Nvidia,n1,574
