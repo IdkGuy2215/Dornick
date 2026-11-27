@@ -1,73 +1,105 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Performance Charts | Dornick's PC Resources</title>
+    <head>
+        <title>
+            Dornick's Website | charts
+        </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://cdn.plot.ly/plotly-3.0.1.min.js" defer></script>
+        <script src="main.js" defer></script>
+    </head>
 
-    <link rel="stylesheet" href="styles.css">
 
-    <!-- Plotly charting library -->
-    <script src="https://cdn.plot.ly/plotly-3.0.1.min.js" defer></script>
 
-    <script src="main.js" defer></script>
-</head>
-<body>
+    <body>
 
-    <header>
-        <nav class="navbar">
-            <a href="index.html" class="logo">DORNICK</a>
+        <header>
+             <nav class="navbar">
+                <a href="index.html" class="logo"><img src="src/img/Dornick.png" id="logo"></a>
 
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="charts.html" class="active">Charts</a>
-                <a href="ext-resources.html">External Resources</a>
-            </div>
-        </nav>
-    </header>
+                <div class="nav-links">
+                    <button type="button"><a href="index.html" class="active">Home</a></button>
+                    <button type="button"><a href="charts.html">Charts</a></button>
+                    <button type="button"ext-resources.html"><a href="ext-resources.html">External Links</a></button>
+                </div>
+            </nav>
+        </header>
 
-    <main>
-        <section class="page-heading">
-            <h1>Performance Charts</h1>
-            <p>
-                Explore hardware performance comparisons across
-                different generations and product families.
-            </p>
-        </section>
+                <h1>Charts</h1>
 
-        <section class="chart-section">
-            <h2>GPU Performance</h2>
-            <p>
-                Compare GPU performance across multiple
-                generations from AMD, NVIDIA, Intel, and other manufacturers.
-            </p>
+                    <section class="chart-section">
+                        <h2>GPU Performance</h2>
+                        <p>
+                            Compare graphics card performance across multiple generations.
+                        </p>
 
-            <div class="chart-container">
-                <div id="gpu-chart"></div>
-                <p id="chart-status" class="chart-status">
-                    Loading GPU data...
-                </p>
-            </div>
+                        <div class="chart-container">
+                            <div id="gpu-chart"></div>
+                            <p id="gpu-chart-status" class="chart-status">
+                                Loading GPU data...
+                            </p>
+                        </div>
+                    </section>
+                    <br>
 
-            <div class="chart-information">
-                <h3>About this chart</h3>
-                <p>
-                    GPUs are arranged by their performance scores.
-                    Hover over individual points to see the GPU model
-                    and its benchmark score.
-                </p>
-                <p>
-                    Use the chart controls to zoom, pan, and explore
-                    smaller performance differences.
-                </p>
-            </div>
-        </section>
-    </main>
+                    <section class="chart-section">
+                        <h2>CPU Performance</h2>
+                        <p>
+                            Compare processor performance across different generations.
+                        </p>
 
-    <footer>
-        <p>Dornick's PC Resources</p>
-    </footer>
+                        <div class="chart-container">
+                            <div id="cpu-chart"></div>
+                            <p id="cpu-chart-status" class="chart-status">
+                                Loading CPU data...
+                            </p>
+                        </div>
+                    </section>
+                    <br>
 
-</body>
+                    <h3>
+                        Relative Performance VS Direct Performance:
+                    </h3>
+                    <p>relative performance is an agregate of performance across a varity of workloads in relation to a baseline</p>
+                    <p>direct performance is an agregate of performance in a specific workload</p>
+                    <p>this is my own personal terminology which i use due to the fact that the offical terminology barely even exists</p>
+                    <br>
+
+                    <h3>
+                        Benchmark Data
+                    </h3>
+                    <p>benchmark data is gathered from a large number of sources, including but not limited to...</p>
+                    <p>
+                        https://www.techpowerup.com/
+                    </p>
+                    <p>
+                        https://www.tomshardware.com/
+                    </p>
+                    <p>
+                        https://technical.city/
+                    </p>
+                    <p>
+                        https://www.cpu-monkey.com/
+                    </p>
+                    <p>
+                        https://gamersnexus.net/
+                    </p>
+                    <p>
+                        https://www.youtube.com/@BudgetBuildsOfficial
+                    </p>
+                    <p>
+                        https://www.youtube.com/@LinusTechTips
+                    </p>
+                    <p>
+                        https://www.youtube.com/@Hardwareunboxed
+                    </p>
+                    <p> as well as my own personal benchmark data</p>
+
+        <footer>
+            <p>Dornick's Everything Website</p>
+        </footer>
+    </body>
 </html>

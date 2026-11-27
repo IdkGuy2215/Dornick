@@ -172,7 +172,7 @@ async function loadGPUChart() {
 
         const layout = {
             title: {
-                text: "GPU Performance Comparison",
+                text: "GPU Relative Performance Comparison",
                 font: {
                     color: "#F1EAF3",
                     size: 20
@@ -182,7 +182,7 @@ async function loadGPUChart() {
 
             annotations: [
         {
-            text: "Performance in relation to a GeForce 210",
+            text: "Overall relative performance in relation to a GeForce 210",
             xref: "paper",
             yref: "paper",
             x: 0.99,
@@ -194,7 +194,7 @@ async function loadGPUChart() {
                 size: 12,
                 color: "#C8BBCF"
             },
-            bgcolor: "#292033",
+            bgcolor: "#190035",
             bordercolor: "#493753",
             borderwidth: 1,
             borderpad: 5
@@ -203,7 +203,7 @@ async function loadGPUChart() {
 
 
 
-            paper_bgcolor: "#292033",
+            paper_bgcolor: "#220048",
             plot_bgcolor: "#201A29",
 
             font: {
@@ -327,5 +327,196 @@ function parseCSV(text) {
 }
 
 
+//CPU CHART
+
+async function loadCPUChart() {
+    const chart = document.getElementById("cpu-chart");
+    const status = document.getElementById("cpu-chart-status");
+
+    if (!chart) return;
+
+    try {
+        const response = await fetch("src/charts/cpu-data.csv");
+
+        if (!response.ok) {
+            throw new Error("Could not load CPU data.");
+        }
+
+        const csv = await response.text();
+        const rows = parseCSV(csv);
+
+        const headers = rows[0].map(header =>
+            header.trim().toLowerCase()
+        );
+
+        const column = name => headers.indexOf(name);
+
+        const cpus = rows.slice(1)
+            .map(row => ({
+                name: row[column("name")].trim(),
+                manufacturer: row[column("manufacturer")].trim(),
+                generation: row[column("generation")].trim(),
+                score: Number(row[column("score")])
+            }))
+            .filter(cpu =>
+                cpu.name &&
+                cpu.manufacturer &&
+                cpu.generation &&
+                Number.isFinite(cpu.score) &&
+                cpu.score > 0
+            );
+
+        if (cpus.length === 0) {
+            throw new Error("No valid CPU entries found.");
+        }
+
+        // Get the generations in CSV order.
+        const generations = [
+            ...new Set(cpus.map(cpu => cpu.generation))
+        ];
+
+        // Assign each generation an X-axis position.
+        cpus.forEach(cpu => {
+            cpu.x = generations.indexOf(cpu.generation);
+        });
+
+        // Manufacturer colors.
+        const manufacturerColors = {
+            "AMD": "#ED1C24",
+            "Intel": "#0071C5",
+            "Nvidia": "#00c51e"
+        };
+
+        const manufacturers = [
+            ...new Set(cpus.map(cpu => cpu.manufacturer))
+        ];
+
+        const traces = manufacturers.map(manufacturer => {
+            const manufacturerCPUs = cpus.filter(
+                cpu => cpu.manufacturer === manufacturer
+            );
+
+            return {
+                x: manufacturerCPUs.map(cpu => cpu.x),
+                y: manufacturerCPUs.map(cpu => cpu.score),
+
+                type: "scatter",
+                mode: "markers",
+                name: manufacturer,
+
+                marker: {
+                    size: 9,
+                    color: manufacturerColors[manufacturer] || "#713A91"
+                },
+
+                customdata: manufacturerCPUs.map(cpu => [
+                    cpu.name,
+                    cpu.generation
+                ]),
+
+                hovertemplate:
+                    "<b>%{customdata[0]}</b><br>" +
+                    "Performance score: %{y:,.0f}<br>" +
+                    "Generation: %{customdata[1]}<br>" +
+                    "Manufacturer: " + manufacturer +
+                    "<extra></extra>"
+            };
+        });
+
+        const layout = {
+            title: {
+                text: "CPU Relative Performance Comparison",
+                font: {
+                    color: "#F1EAF3",
+                    size: 20
+                }
+            },
+
+        annotations: [
+            {
+                text: "Overall relative performance in relation to a Ryzen 3 1200",
+                xref: "paper",
+                yref: "paper",
+                x: 0.99,
+                y: 0.99,
+                xanchor: "right",
+                yanchor: "top",
+                showarrow: false,
+                font: {
+                    size: 12,
+                    color: "#C8BBCF"
+                },
+                bgcolor: "#190035",
+                bordercolor: "#493753",
+                borderwidth: 1,
+                borderpad: 5
+            }
+        ],
+
+            paper_bgcolor: "#220048",
+            plot_bgcolor: "#201A29",
+
+            font: {
+                color: "#F1EAF3"
+            },
+
+            xaxis: {
+                title: "CPU Generation",
+                tickmode: "array",
+                tickvals: generations.map((generation, index) => index),
+                ticktext: generations,
+                gridcolor: "#493753",
+                linecolor: "#65516F"
+            },
+
+            yaxis: {
+                title: "Performance Score",
+                type: "linear",
+                gridcolor: "#493753",
+                linecolor: "#65516F",
+                rangemode: "tozero"
+            },
+
+            legend: {
+                title: {
+                    text: "Manufacturer"
+                },
+                bgcolor: "#292033",
+                bordercolor: "#493753",
+                borderwidth: 1
+            },
+
+            margin: {
+                l: 75,
+                r: 30,
+                t: 70,
+                b: 120
+            },
+
+            dragmode: "zoom"
+        };
+
+        const config = {
+            responsive: true,
+            scrollZoom: true,
+            displaylogo: false,
+            displayModeBar: true
+        };
+
+        await Plotly.newPlot(chart, traces, layout, config);
+
+        status.textContent =
+            `Loaded ${cpus.length} CPUs from ${generations.length} generations.`;
+
+    } catch (error) {
+        console.error("CPU chart error:", error);
+        status.textContent = error.message;
+    }
+}
+
+
 // Start loading the chart when the page is ready.
-document.addEventListener("DOMContentLoaded", loadGPUChart);
+document.addEventListener("DOMContentLoaded", () => {
+    loadGPUChart();
+    loadCPUChart();
+});

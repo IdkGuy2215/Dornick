@@ -1,2 +1,2 @@
-# Dornick-GPU-Database
-Its a gpu database, made by me Dornick (aka IdkGuy2215)
+# Dornick's Everything Website
+Its a website, made by me Dornick (aka IdkGuy2215)
